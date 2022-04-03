@@ -22,7 +22,8 @@
     "esModuleInterop": true,
     "baseUrl": "./",
     "paths": {
-      "@domain/*": ["src/domain/*"],
+      "@common/*": ["src/packages/common/*"],
+      "@core/*": ["src/packages/core/*"],
     },
     "types": ["reflect-metadata", "jest", "node"]
   }

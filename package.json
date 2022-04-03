@@ -59,9 +59,6 @@
     "testEnvironment": "node",
     "moduleNameMapper": {
       "^@infra/(.*)$": "<rootDir>/src/infra/$1",
-      "^@domain/(.*)$": "<rootDir>/src/domain/$1",
-      "^@app/(.*)$": "<rootDir>/src/application/$1",
-      "^@test/(.*)$": "<rootDir>/test/$1"
     }
   }
 }
