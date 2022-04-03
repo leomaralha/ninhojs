@@ -1,0 +1,67 @@
+{
+  "name": "ninhojs",
+  "version": "0.0.1",
+  "description": "A event based framework inspired by nestjs",
+  "main": "dist/main.js",
+  "dependencies": {
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.13.2",
+    "env-var": "^7.1.1",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.5.5"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "@types/node": "^17.0.23",
+    "@typescript-eslint/eslint-plugin": "^5.17.0",
+    "@typescript-eslint/parser": "^5.17.0",
+    "eslint": "^8.12.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^27.5.1",
+    "prettier": "^2.6.2",
+    "ts-jest": "^27.1.4",
+    "ts-node": "^10.7.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leomaralha/ninhojs.git"
+  },
+  "keywords": [
+    "event-based",
+    "decorators"
+  ],
+  "author": "Leonardo Maralha <leoo.maralha@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leomaralha/ninhojs/issues"
+  },
+  "homepage": "https://github.com/leomaralha/ninhojs#readme",
+  "jest": {
+    "moduleFileExtensions": [
+      "json",
+      "ts",
+      "js"
+    ],
+    "rootDir": ".",
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "src/**/usecases/**/*.ts",
+      "!src/**/usecases/**/index.ts"
+    ],
+    "coverageDirectory": "coverage",
+    "testEnvironment": "node",
+    "moduleNameMapper": {
+      "^@infra/(.*)$": "<rootDir>/src/infra/$1",
+      "^@domain/(.*)$": "<rootDir>/src/domain/$1",
+      "^@app/(.*)$": "<rootDir>/src/application/$1",
+      "^@test/(.*)$": "<rootDir>/test/$1"
+    }
+  }
+}
